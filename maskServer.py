@@ -131,7 +131,13 @@ def encode_image_to_base64(image: Image):
 @app.post("/process-image/")
 async def process_image(data: ImageData):
     request_id = str(uuid.uuid4())
+    #判断是否存在 temp 文件夹，如果不存在就创建
+    if not os.path.exists('./temp'):
+        os.makedirs('./temp')
     temp_image_path = f"./temp/{request_id}.jpeg"
+    #判断是否存在 results 文件夹，如果不存在就创建
+    if not os.path.exists('./results'):
+        os.makedirs('./results')
     results_dir = f"./results/{request_id}"
     os.makedirs(results_dir, exist_ok=True)
 
