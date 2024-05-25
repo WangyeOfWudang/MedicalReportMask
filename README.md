@@ -5,3 +5,4 @@
 # Demo
 Google Colab
 https://colab.research.google.com/drive/1pLOuxQVlRxcY_FGikHz29ap7f7_5o-Hk?usp=sharing
+![demo](https://github.com/WangyeOfWudang/MedicalReportMask/assets/167185971/03de8112-8f82-4de9-be44-70258fe7afa0)
