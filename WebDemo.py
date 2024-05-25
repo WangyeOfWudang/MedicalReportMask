@@ -34,7 +34,7 @@ iface = gr.Interface(
     fn=process_image,
     inputs=gr.Image(label="Original Image"),
     outputs=gr.Image(label="Processed Image"),
-    title="Image Processing Demo",
+    title="医疗报告图片脱敏 Demo",
     description="Upload an image to apply masking."
 )
 
